@@ -3562,4 +3562,67 @@ body.search-is-visible {
   visibility: visible;
 }
 
+/* -------------------------------------------------------------------
+ * ## format my text ads.
+ * ------------------------------------------------------------------- */
+.Text-Advertising {
+    position: relative;
+    width: 100%;
+    margin: 6px 0 -15px;
+    clear: both;
+    background: #fff;
+    padding: 8px 0;
+    overflow: hidden;
+    background: repeating-linear-gradient(135deg, transparent, transparent 3px, #bbb 3px, #ff0 8px);
+    animation: shine 1s infinite linear;
+	text-align: center;
+	display: block;
+}
+
+.Text-Advertising:before {
+    content: "";
+    position: absolute;
+    left: -200%;
+    width: 300%;
+    height: 50px;
+    background-image: linear-gradient(0, transparent 20%,rgba(255,255,255,.4) 50%,transparent 80%);
+    background-color: rgba(255,255,255,.4);
+    transform: rotate(-60deg);
+    animation: searchLights 3s ease-in 3s infinite;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.Text-Advertising:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background: #fff;
+    z-index: 0;
+}
+
+.Text-Advertising ul {
+    position: relative;
+    float: left;
+    width: 29%;
+    z-index: 2;
+	list-style: none;
+}
+
+.Text-Advertising li {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 0;
+	display: list-item;
+}
+
+.list-unstyled {
+	margin-bottom: 0;
+
+}
+
 /*# sourceMappingURL=main.css.map */
